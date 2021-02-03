@@ -19,8 +19,10 @@ namespace superjump
         int playerSpeed = 7;
         int enemyOneSpeed = 5;
         int enemyTwoSpeed = 3;
-        
-        
+        int enemyThreeSpeed = 13;
+        int enemyFourSpeed = 1;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -98,13 +100,24 @@ namespace superjump
             {
                 enemyTwoSpeed = -enemyTwoSpeed;
             }
-            if(player.Top + player.Height> this.ClientSize.Height + 50)
+            enemyThree.Left -= enemyThreeSpeed;
+            if (enemyThree.Left < pictureBox5.Left || enemyThree.Left + enemyThree.Width > pictureBox5.Left + pictureBox5.Width)
+            {
+                enemyThreeSpeed = -enemyThreeSpeed;
+            }
+            enemyFour.Left -= enemyFourSpeed;
+            if (enemyFour.Left < pictureBox3.Left || enemyFour.Left + enemyFour.Width > pictureBox3.Left + pictureBox3.Width)
+            {
+                enemyFourSpeed = -enemyFourSpeed;
+            }
+
+            if (player.Top + player.Height> this.ClientSize.Height + 50)
             {
                 gameTimer.Stop();
                 isGameOver = true;
                 txtScore.Text = "Score: " + score + Environment.NewLine + "you dead falling!";
             }
-            if(player.Bounds.IntersectsWith(door.Bounds)&& score == 3)
+            if(player.Bounds.IntersectsWith(door.Bounds)&& score == 9)
             {
                 gameTimer.Stop();
                 isGameOver = true;
