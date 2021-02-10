@@ -12,6 +12,12 @@ namespace superjump
 {
     public partial class Form1 : Form
     {
+        //newly added
+
+        BaseBox Box1 = new BaseBox("pb1", 2000, 2000, Color.Blue);
+        Enemy enemy = new Enemy("cpu", 20, 20);
+        
+       //old 
         bool goLeft, goRight, jumping, isGameOver;
         int jumpSpeed;
         int force;
@@ -30,11 +36,16 @@ namespace superjump
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void MainGameTimerEvent(object sender, EventArgs e)
         {
+            //newly added
+            Box1.Box.Left = 100;
+            Box1.Box.Top = 50;
+
+            //old
             txtScore.Text = "score:" + score;
             player.Top += jumpSpeed;
             if(goLeft == true)
@@ -170,7 +181,6 @@ namespace superjump
         }
         private void RestartGame()
         {
-
         
             jumping = false;
             goLeft = false;
