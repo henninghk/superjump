@@ -8,18 +8,14 @@ using System.Windows.Forms;
 
 namespace superjump
 {
-    class Enemy
+    class Enemy :  BaseBox
     {
-        private string _name;
-        private int _width;
-        private int _height;
         
-        public Enemy(string name, int width, int height)
+        public Enemy(string name, int width, int height, Color color, int StartX, int StartY): base(name, width, height, color, StartX, StartY)
         {
-            _name = name;
-            _width = width;
-            _height = height;
-    
+           
+            
+            
         }
         
     }
