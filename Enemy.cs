@@ -11,7 +11,7 @@ namespace superjump
     class Enemy :  BaseBox
     {
         
-        public Enemy(string name, int width, int height, Color color, int StartX, int StartY): base(name, width, height, color, StartX, StartY)
+        public Enemy(string name, int StartX, int StartY): base(name,39, 98, Color.Gold, StartX, StartY)
         {
            
             

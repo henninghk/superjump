@@ -8,11 +8,9 @@ using System.Windows.Forms;
 
 namespace superjump
 {
-    class Level : BaseBox
+    class Goal : BaseBox
     {
-
-
-        public Level(string name, int width, int height, int StartX, int StartY) : base(name, width, height, Color.Brown, StartX, StartY)
+        public Goal(string name) : base(name, 39, 98, Color.Peru, 33, 33)
         {
 
         }

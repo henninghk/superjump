@@ -12,12 +12,17 @@ namespace superjump
     {
         
         public static Form2 form;
+
         public Enemies enemies;
-        public Leveles levels;   
+        public Leveles levels;
+        public Coins coins;
+        public Finishline goal;
         public Form2()
         {
             enemies = new Enemies();
             levels = new Leveles();
+            coins = new Coins();
+            goal = new Finishline();
             ClientSize = new Size(675,628);
             form = this;
             InitializeComponents();
@@ -27,25 +32,37 @@ namespace superjump
         {
             SpawnLeveles();
             SpawnEnemies();
+            SpawnCoins();
+            SpawnFinishline();
             form.Text = "Hei, jeg heter Henning!";
         }
         public void SpawnLeveles()
         {
             foreach (var Level in levels.All)
-           {
-                Level.SpawnBox();
+            {
+                Controls.Add(Level);
             }
         }
         public void SpawnEnemies()
         {
             foreach (var enemy in enemies.All)
             {
-                enemy.SpawnBox();
+                Controls.Add(enemy);
             }
-            //foreach (var enemy in enemies.All)
-            //{
-            //    enemy.RemoveBox();
-            //}
+        }
+        public void SpawnCoins()
+        {
+            foreach (var coin in coins.All)
+            {
+                Controls.Add(coin);
+            }
+        }
+        public void SpawnFinishline()
+        {
+            foreach (var Goal in goal.All)
+            {
+                Controls.Add(Goal);
+            }
         }
     }
 }

@@ -30,18 +30,18 @@ namespace superjump
         public Leveles()
         {
             
-            level1 = new Level("levelOne", 272, 45, Color.Brown, -9, 570);
-            level2 = new Level("levelTwo", 194, 15, Color.Brown, 305, 510);
-            level3 = new Level("levelThree", 140, 20, Color.Brown, 143, 405);
-            level4 = new Level("levelFour", 188, 22, Color.Brown, 370, 305);
-            level5 = new Level("levelFive", 115, 10, Color.Brown, 143, 226);
-            level6 = new Level("levelSix", 77, 16, Color.Brown ,181, 528);
-            level7 = new Level("levelSeven", 65, 13, Color.Brown, 56, 176);
-            level8 = new Level("levelEight", 65, 13, Color.Brown, 33, 376);
-            level9 = new Level("levelNine", 65, 13, Color.Brown, 281, 334);
-            level10 = new Level("levelTen", 65, 13, Color.Brown, 305, 226);
-            level11 = new Level("levelEleven", 65, 13, Color.Brown, 538, 457);
-            level12 = new Level("levelTwelve", 65, 13, Color.Brown, 589, 376);
+            level1 = new Level("levelOne", 272, 45,  -9, 570);
+            level2 = new Level("levelTwo", 194, 15, 305, 510);
+            level3 = new Level("levelThree", 140, 20, 143, 405);
+            level4 = new Level("levelFour", 188, 22,  370, 305);
+            level5 = new Level("levelFive", 115, 10,  143, 226);
+            level6 = new Level("levelSix", 77, 16, 181, 528);
+            level7 = new Level("levelSeven", 65, 13, 56, 176);
+            level8 = new Level("levelEight", 65, 13, 33, 376);
+            level9 = new Level("levelNine", 65, 13,  281, 334);
+            level10 = new Level("levelTen", 65, 13,  305, 226);
+            level11 = new Level("levelEleven", 65, 13, 538, 457);
+            level12 = new Level("levelTwelve", 65, 13,  589, 376);
 
 
             All = new List<Level>
