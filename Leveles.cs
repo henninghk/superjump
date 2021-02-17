@@ -60,5 +60,12 @@ namespace superjump
                 level12,
             };
         }
+        public void SpawnLeveles()
+        {
+            foreach (var Level in All)
+            {
+                Form2.form.Controls.Add(Level);
+            }
+        }
     }
 }

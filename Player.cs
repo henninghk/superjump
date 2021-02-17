@@ -8,12 +8,11 @@ using System.Windows.Forms;
 
 namespace superjump
 {
-    class Goal : BaseBox
+    class Player : BaseBox
     {
-        public bool HasPlayerWon;
-        public Goal() : base("HerErDetSeierÅFå", 39, 98, Color.Peru, 33, 33)
+        public Player(string name) : base(name, 39, 36, Color.Black, 71, 528)
         {
-            
+
         }
     }
 }
