@@ -11,7 +11,7 @@ namespace superjump
     class Goal : BaseBox
     {
         public bool HasPlayerWon;
-        public Goal() : base("HerErDetSeierÅFå", 39, 98, Color.Peru, 33, 33)
+        public Goal() : base("FinishLine", 39, 98, Color.Peru, 33, 33)
         {
             
         }
