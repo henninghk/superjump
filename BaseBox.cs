@@ -29,6 +29,8 @@ namespace superjump
             BackColor = Color;
             Size = new Size(Width,Height);
             Location = new Point(StartX, StartY);
+            //Left = StartX;
+            //Top = StartY;
         }
         //public void ChoseVisibility(bool isVisible)
         //{
